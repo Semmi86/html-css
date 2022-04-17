@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 800px) {
+.container-1 {
+    display: flex; 
+    height: calc(100vh - 212px);
+    align-items: stretch;
+}
+}
+
+.header {
+    border: 2px solid silver;
+    background-color: blue;
+}
+
+.navigation {
+    border: 2px solid silver;
+    background-color: orange;
+    width: 300 px;
+}
+
+.main {
+    border: 2px solid silver;
+    background-color: white;
+}
+
+.related-links {
+    border: 2px solid silver;
+    background-color: blueviolet;
+}
+
+.futter {
+    border: 2px solid silver;
+    background-color: green;
+    width: 100%;
+}
+
+h3 {
+    padding: 40px;
+}
+p {
+    padding: 20px;
+}
