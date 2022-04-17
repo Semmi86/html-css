@@ -4,43 +4,98 @@
 }
 
 @media (min-width: 800px) {
-.container-1 {
-    display: flex; 
-    height: calc(100vh - 212px);
-    align-items: stretch;
-}
+    .container-1 {
+        display: flex; 
+        height: calc(100vh - 212px);
+        align-items: stretch;
+    }
+
+    .navigation {
+        border: 2px solid silver;
+        background-color: orange;
+        flex: 0 0 250px;
+    }
+
+    .main { 
+        border: 2px solid silver;
+        background-color: white;
+    }
+
+    .related-links {
+        border: 2px solid silver;
+        background-color: blueviolet;
+        flex: 0 0 250px;
+    }
+
 }
 
+@media (max-width: 800px) {
+    .container-1 {
+        display: flex; 
+        height: calc(100vh - 212px);
+        align-items: stretch;
+        flex-direction: column;
+    }  
+    .navigation {
+        border: 2px solid silver;
+        background-color: orange;
+        flex: 0 0 60px;
+    }
+    
+    .main { 
+        border: 2px solid silver;
+        background-color: white;
+        height: calc(100vh - 212px - 120px);
+    }
+    
+    .related-links {
+        border: 2px solid silver;
+        background-color: blueviolet;
+        flex: 0 0 60px;
+    }
+
+}
+ 
 .header {
     border: 2px solid silver;
     background-color: blue;
 }
 
-.navigation {
-    border: 2px solid silver;
-    background-color: orange;
-    width: 300 px;
-}
-
-.main { 
-    border: 2px solid silver;
-    background-color: white;
-}
-
-.related-links {
-    border: 2px solid silver;
-    background-color: blueviolet;
-}
 
 .futter {
     border: 2px solid silver;
     background-color: green;
-    width: 100%;
 }
 
-h3 {
+.header-text {
     padding: 40px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
-p {
+
+.navigation-text {
     padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-text {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.related-links-text {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.futter-text {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    padding: 0 20px 20px;
 }
